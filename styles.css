@@ -59,6 +59,26 @@ hr {
     border: none;
     border-top: 0.75px solid #DAE1D8;
 }
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Centrar contenido */
+}
+
+nav ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    padding: 0; /* Eliminar relleno interior */
+}
+
+nav ul li {
+    display: inline; /* Mostrar en línea */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #fff; /* Color del texto del enlace */
+    padding: 10px; /* Espaciado interior */
+}
 @keyframes fade-in {
     from {
         color: transparent;
