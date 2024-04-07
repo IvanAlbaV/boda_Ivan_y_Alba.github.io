@@ -3,7 +3,7 @@ body {
     color: #DAE1D8;
     margin-bottom: 0.25;
     padding: 0;
-    overflow: visible !important;
+    background-color: #0c251e;
     overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
 }
 #title {
