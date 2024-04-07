@@ -79,6 +79,10 @@ nav ul li a {
     color: #fff; /* Color del texto del enlace */
     padding: 10px; /* Espaciado interior */
 }
+header img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantener la proporción original de la imagen */
+}
 @keyframes fade-in {
     from {
         color: transparent;
