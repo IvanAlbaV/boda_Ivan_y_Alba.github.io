@@ -91,7 +91,7 @@ hr {
     border-top: 0.75px solid #DAE1D8;
 }
 header {
-    background-image: url(images/imageHeader.png); /* Color de fondo del encabezado */
+    background-image: url(images/imageHeader.jpeg); /* Color de fondo del encabezado */
     width: 100vw; /* Espaciado interior */
     height: 50vw;
     background-size: cover;
