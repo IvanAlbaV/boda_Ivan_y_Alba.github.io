@@ -114,4 +114,9 @@ nav ul li a {
     nav ul li a{
         font-size: 2em; /* Reduce el tamaño del contador en dispositivos móviles */
     }
+    header{
+        width: auto; /* Permitir que la imagen ajuste su ancho automáticamente */
+        max-width: 100%; /* Limitar el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Permitir que la altura de la imagen se ajuste proporcionalmente */
+    }
 }
