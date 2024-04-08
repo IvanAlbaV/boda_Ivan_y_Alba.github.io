@@ -145,6 +145,7 @@ nav ul li a {
     }
     nav ul li a{
         font-size: 1em; /* Reduce el tamaño del contador en dispositivos móviles */
+        padding: 8px; /* Espaciado interior */
     }
     .containerCountdown{
         display: flex;
