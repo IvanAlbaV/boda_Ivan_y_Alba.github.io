@@ -42,6 +42,7 @@ header.active .hamburger .line{
     font-size: 25px;
     font-weight: bold;
     color: #0c251e;
+    width: 30%;
 }
 
 .hamburger{
@@ -51,7 +52,7 @@ header.active .hamburger .line{
 .navigator{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     align-items: center;
 }
 
@@ -62,7 +63,7 @@ header.active .hamburger .line{
 
 .navigator ul{
     display: flex;
-    width: 100%;
+    justify-content: end;
 }
 
 .navigator.active ul {
@@ -73,7 +74,8 @@ header.active .hamburger .line{
 
 .navigator ul li {
     list-style: none;
-    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .navigator.active ul li{
@@ -84,12 +86,11 @@ header.active .hamburger .line{
 .navigator ul li a{
     display: block;
     color: #0c251e;
-    font-size: 20px;
+    font-size: 25px;
     padding: 0 0;
     transition: 0.2s;
-    margin: 0 5px;
+    margin: 0 15px;
     text-decoration: none;
-    width: 100%;
 }
 
 .sticky{
