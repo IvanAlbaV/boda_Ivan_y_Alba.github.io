@@ -35,8 +35,8 @@ function listenerHamburger(){
     var hamburger = document.querySelector(".hamburger");
     hamburger.onclick = function() {
         var navigator = document.querySelector(".navigator");
-        navigator.classList.toggle("active");
         var header = document.querySelector("header");
+        navigator.classList.toggle("active");
         header.classList.toggle("active");
     }
 }
