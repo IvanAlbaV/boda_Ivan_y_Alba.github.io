@@ -208,6 +208,10 @@ hr {
         margin: 0 20px;
     }
 
+    .sticky .logo{
+        font-size: 40px;
+    }
+
     .hamburger .line {
         width: 30px;
         height: 3px;
