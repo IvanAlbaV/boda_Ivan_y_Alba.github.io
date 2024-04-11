@@ -26,6 +26,23 @@ function padLeft(value, length) {
     return String(value).padStart(length, '0');
 }
 
+window.addEventListener('scroll', function() {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+function listenerHamburger(){
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        var navigator = document.querySelector(".navigator");
+        navigator.classList.toggle("active");
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+    }
+}
+
 setInterval(actualizarContador, 1000);
 
 actualizarContador();
+
+listenerHamburger();
