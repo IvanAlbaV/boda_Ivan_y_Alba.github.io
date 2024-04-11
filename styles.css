@@ -28,6 +28,7 @@ header {
 
 header.active{
     background:#0c251e;
+    transition: 0.2s;
 }
 
 header.active .logo{
