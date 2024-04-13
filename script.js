@@ -41,6 +41,26 @@ function listenerHamburger(){
     }
 }
 
+// Función para rotar el logo
+function rotateLogo() {
+
+    var logo = document.querySelector('.logoExt');
+    var logoInt = document.querySelector('.logoInt');
+
+    // Obtener la cantidad de desplazamiento vertical
+    var scrollY = window.scrollY || window.pageYOffset;
+    
+    // Calcular el ángulo de rotación basado en el desplazamiento
+    var rotation = scrollY / 20; // Puedes ajustar el valor según tu preferencia
+
+    // Aplicar la rotación al logo
+    logo.style.transform = 'rotate(' + rotation + 'deg)';
+    logoInt.style.transform = 'rotate(-' + rotation + 'deg)';
+}
+
+// Evento de scroll para llamar a la función de rotación
+window.addEventListener('scroll', rotateLogo);
+
 setInterval(actualizarContador, 1000);
 
 actualizarContador();

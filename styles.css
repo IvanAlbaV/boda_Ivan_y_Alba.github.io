@@ -24,6 +24,7 @@ header {
     padding: 0 100px;
     margin: 0;
     z-index: 100000;
+    /*border: black solid 1px;*/
 }
 
 header.active{
@@ -39,11 +40,40 @@ header.active .hamburger .line{
     background: #DAE1D8;
 }
 
-.logo{
-    font-size: 40px;
-    font-weight: bold;
-    color: #0c251e;
-    width: 30%;
+.containerLogo{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    /*border: red solid 1px;*/
+    display: flex;
+    justify-content: center;
+}
+
+
+.logoExt{
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Alinea el logo externo en la parte superior */
+    left: 0; /* Alinea el logo externo en la parte izquierda */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa la mitad de la altura del contenedor */
+    background-image: url(images/4-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    /* Establece el origen de la transformación en el centro del logo */
+    transform-origin: center;
+}
+
+.logoInt{
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Alinea el logo interno en la parte inferior */
+    left: 0; /* Alinea el logo interno en la parte izquierda */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa la mitad de la altura del contenedor */
+    background-image: url(images/6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
 }
 
 .hamburger{
@@ -94,6 +124,10 @@ header.active .hamburger .line{
     text-decoration: none;
 }
 
+.sticky .navigator ul li a {
+    color: #DAE1D8;
+}
+
 .sticky{
     background: #0c251e;
 }
@@ -101,6 +135,10 @@ header.active .hamburger .line{
 .sticky * {
     color: #DAE1D8;
     text-decoration: none;
+}
+
+.sticky .containerLogo .logoInt{
+    background-image: url(images/5.png);
 }
 
 .container{
