@@ -45,7 +45,6 @@ function listenerHamburger(){
 function rotateLogo() {
 
     var logo = document.querySelector('.logoExt');
-    var logoInt = document.querySelector('.logoInt');
 
     // Obtener la cantidad de desplazamiento vertical
     var scrollY = window.scrollY || window.pageYOffset;
@@ -55,8 +54,21 @@ function rotateLogo() {
 
     // Aplicar la rotación al logo
     logo.style.transform = 'rotate(' + rotation + 'deg)';
-    logoInt.style.transform = 'rotate(-' + rotation + 'deg)';
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
 
 // Evento de scroll para llamar a la función de rotación
 window.addEventListener('scroll', rotateLogo);

@@ -151,10 +151,23 @@ header.active .hamburger .line{
     align-items: center;
     width: 100%;
 }
+
+#image1 {
+    background-image: url(images/8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
 .containerCountdown{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .containerHistory{
@@ -197,6 +210,15 @@ hr {
     padding-top: 20px;
     border: none;
     border-top: 0.75px solid #DAE1D8;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
 }
 
 @media (max-width: 600px) {
