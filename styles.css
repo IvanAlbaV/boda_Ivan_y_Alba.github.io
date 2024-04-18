@@ -141,6 +141,10 @@ header.active .hamburger .line{
     background-image: url(images/5.png);
 }
 
+.active .containerLogo .logoInt{
+    background-image: url(images/5.png);
+}
+
 .container{
     position: absolute;
     top: 90px;
