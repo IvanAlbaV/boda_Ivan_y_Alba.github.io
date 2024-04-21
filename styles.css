@@ -24,7 +24,6 @@ header {
     padding: 0 100px;
     margin: 0;
     z-index: 100000;
-    /*border: black solid 1px;*/
 }
 
 header.active{
@@ -179,6 +178,8 @@ header.active .hamburger .line{
     flex-direction: column;
     justify-content: center;
     width: 60%;
+    box-shadow: 0 0 10px #0c251e;
+    border-radius: 1px;
 }
 .containerHistory hr{
     width: 100%;
@@ -234,6 +235,8 @@ hr {
     }
     #history {
         font-size: 2rem; /* Reduce el tamaño del contador en dispositivos móviles */
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .containerCountdown{
@@ -245,7 +248,7 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 85%;
+        width: 90%;
     }
 
     .sticky * {
