@@ -178,8 +178,12 @@ header.active .hamburger .line{
     flex-direction: column;
     justify-content: center;
     width: 60%;
-    box-shadow: 0 0 10px #0c251e;
-    border-radius: 1px;
+    box-shadow: 
+    0 -6px #DAE1D8,
+    0 6px #DAE1D8, 
+    0 0 8px #0c251e, 
+    0 0 8px #0c251e;
+    border-radius: 0.5px;
 }
 .containerHistory hr{
     width: 100%;
