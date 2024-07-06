@@ -248,6 +248,15 @@ hr {
 }
 
 @media (max-width: 600px) {
+    a {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: #0c251e; /* Mismo color que el enlace no visitado */
+        text-decoration: none; /* Sin subrayado */
+    }
+
     #title {
         font-size: 3rem; /* Reduce el tamaño del título en dispositivos móviles */
     }
