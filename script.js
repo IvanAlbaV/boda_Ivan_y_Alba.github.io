@@ -42,7 +42,7 @@ function listenerHamburger(){
 }
 
 // Función para rotar el logo
-function rotateLogo() {
+/*function rotateLogo() {
 
     var logo = document.querySelector('.logoExt');
 
@@ -54,7 +54,7 @@ function rotateLogo() {
 
     // Aplicar la rotación al logo
     logo.style.transform = 'rotate(' + rotation + 'deg)';
-}
+}*/
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -71,7 +71,28 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Evento de scroll para llamar a la función de rotación
-window.addEventListener('scroll', rotateLogo);
+//window.addEventListener('scroll', rotateLogo);
+
+document.querySelectorAll('#linkDiaB').forEach(a => {
+    a.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const headerOffset = document.querySelector('header').offsetHeight;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerOffset - 30;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.click()
+
+        }
+    });
+});
 
 setInterval(actualizarContador, 1000);
 

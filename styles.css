@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Tangerine';
     color: #0c251e;
@@ -9,6 +13,15 @@ body {
     justify-content: center;
     background-color: #DAE1D8;
     overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0c251e; /* Mismo color que el enlace no visitado */
+    text-decoration: none; /* Sin subrayado */
 }
 
 header {
@@ -205,6 +218,11 @@ header.active .hamburger .line{
     display: flex;
     justify-content: center;
 }
+#diaB {
+    text-align: center;
+    font-size: 4rem; /* Tamaño grande del título */
+    margin: 20px 0; /* Añade un poco de espacio arriba y abajo */
+}
 .countdown-item {
     margin: 10px; /* Ajusta el espacio entre los elementos */
     padding-right: 10px;
@@ -240,6 +258,9 @@ hr {
         font-size: 2rem; /* Reduce el tamaño del contador en dispositivos móviles */
         padding-left: 15px;
         padding-right: 15px;
+    }
+    #diaB {
+        font-size: 3rem; /* Reduce el tamaño del título en dispositivos móviles */
     }
 
     .container{
