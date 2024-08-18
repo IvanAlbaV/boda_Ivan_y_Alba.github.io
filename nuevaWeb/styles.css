@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0c251e;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 100% de la altura de la ventana */
+    background: url('../images/imageHeader\ final\ forma1.png') no-repeat center center/cover;
+    z-index: 1;
+}
+
+#frontPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Ajusta el color según tu diseño */
+    z-index: 2;
+    background-color: transparent;
+}
+
+a{
+    background-color: transparent;
+    margin-bottom: 20px;
+    align-self: center;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white; /* Mismo color que el enlace no visitado */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+.nameFrontPage {
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: transparent;
+    width: 100%;
+}
+
+#contentLink {
+    margin-top: 100vh; /* Para que el contenido no quede oculto detrás del header */
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.left {
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    width: 100%;
+}
+
+.arrowButton {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 50px;
+    z-index: 100;
+    margin-top: 90px;
+    padding: 0;
+    cursor: pointer;
+}
