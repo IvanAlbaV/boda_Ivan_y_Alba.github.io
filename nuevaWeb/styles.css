@@ -28,7 +28,9 @@ header {
     height: 80vh;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
-    background: url('../images/imageHeader\ final\ forma2.png') no-repeat center center/cover;
+    background: linear-gradient(to bottom, #0c251e, transparent 20%, transparent 80%, #0c251e),
+                linear-gradient(to right, #0c251e, transparent 20%, transparent 80%, #0c251e),
+                url('../images/imageHeader\ final\ forma2.png') no-repeat center center/cover;
 }
 
 #frontPage section {
@@ -127,7 +129,9 @@ section {
     }
 
     #frontPage {
-        background: url('../images/imageHeader\ final\ forma1\ -\ mobile.png') no-repeat center center/cover;
+        background: linear-gradient(to bottom, #0c251e, transparent 20%, transparent 80%, #0c251e),
+                    linear-gradient(to right, #0c251e, transparent 20%, transparent 80%, #0c251e),
+                    url('../images/imageHeader\ final\ forma1\ -\ mobile.png') no-repeat center center/cover;
         position: absolute;
         top: 20%;
         left: 0;
