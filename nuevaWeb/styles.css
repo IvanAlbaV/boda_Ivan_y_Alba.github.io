@@ -144,7 +144,7 @@ section {
 
     #frontPageArrow {
         position: absolute;
-        bottom: 0; /* Distancia desde el fondo de la pantalla */
+        bottom: 2%; /* Distancia desde el fondo de la pantalla */
         left: 50%;
         cursor: pointer;
     }
