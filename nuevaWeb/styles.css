@@ -196,7 +196,7 @@ section {
         position: absolute;
         bottom: 0; /* Distancia desde el fondo de la pantalla */
         left: 45%;
-        margin-bottom: 60px;
+        margin-bottom: 20%;
         cursor: pointer;
     }
 
