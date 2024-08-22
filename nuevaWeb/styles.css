@@ -54,11 +54,18 @@ a:visited {
 }
 
 
-.nameFrontPage {
+.nameFrontPageBig {
     font-size: 1.5rem;
     font-style: normal;
     letter-spacing: 3px;
-    font-weight: 900;
+    font-weight: 1200;
+}
+
+.nameFrontPageLit {
+    font-size: 0.75rem;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 section {
@@ -69,6 +76,8 @@ section {
     background-color: transparent;
     width: 100%;
 }
+
+
 
 #contentLink {
     margin-top: 100vh; /* Para que el contenido no quede oculto detrás del header */
@@ -119,13 +128,46 @@ section {
     cursor: pointer;
 }
 
+.dateFront{
+    display: grid;
+    grid-template-columns: auto auto auto; /* Tres columnas */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    background-color: transparent;
+}
+
+/* Agregar barras verticales de separación */
+.dateFront a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px; /* Ancho de la barra */
+    background-color: white; /* Color de la barra */
+    transform: translateX(50%);
+}
+
+/* Ajuste para que las barras no se sobrepongan */
+.dateFront a:not(:last-child) {
+    position: relative;
+    padding-right: 20px; /* Espacio para la barra */
+}
+
 @media (max-width: 768px) {
 
-    .nameFrontPage {
-        font-size: 0.75rem;
+    .nameFrontPageBig {
+        font-size: 1rem;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+
+    .nameFrontPageLit {
+        font-size: 1rem;
         font-style: normal;
         letter-spacing: 1px;
-        font-weight: 900;
+        font-weight: 400;
     }
 
     #frontPage {
