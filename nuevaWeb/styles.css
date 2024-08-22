@@ -30,7 +30,7 @@ header {
     z-index: 2;
     background: linear-gradient(to bottom, #0c251e, transparent 20%, transparent 80%, #0c251e),
                 linear-gradient(to right, #0c251e, transparent 20%, transparent 80%, #0c251e),
-                url('../images/imageHeader\ final\ forma2.png') no-repeat center center/cover;
+                url('../images/imageHeader\ final\ forma1.png') no-repeat center center/cover;
 }
 
 #frontPage section {
