@@ -68,7 +68,17 @@ a:visited {
     font-weight: 400;
 }
 
-section {
+#contentLink section {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+    width: 80%;
+}
+
+#frontPage section {
     display: grid;
     place-items: center;
     align-content: center;
@@ -77,13 +87,14 @@ section {
     width: 100%;
 }
 
-
-
 #contentLink {
+    display: flex;
+    flex-direction: column;
     margin-top: 100vh; /* Para que el contenido no quede oculto detrás del header */
     color: white;
     width: 100%;
     align-items: center;
+    padding-top: 20%;
 }
 
 .hidden {
@@ -156,6 +167,17 @@ section {
 .dateFront a:not(:last-child) {
     position: relative;
     padding-right: 20px; /* Espacio para la barra */
+}
+
+.verticalLine {
+    display: flex;
+    justify-content: start;
+    height: 90px;
+    border-right: 4px solid white;
+}
+
+.borderSection{
+    border: 4px solid white;
 }
 
 @media (max-width: 768px) {
