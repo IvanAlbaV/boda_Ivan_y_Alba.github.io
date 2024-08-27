@@ -28,9 +28,7 @@ header {
     height: 80vh;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
-    background: linear-gradient(to bottom, #0c251e, transparent 20%, transparent 80%, #0c251e),
-                linear-gradient(to right, #0c251e, transparent 20%, transparent 80%, #0c251e),
-                url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
+    background: url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
 }
 
 #front{
@@ -249,9 +247,7 @@ a:visited {
     }
 
     #frontPage {
-        background: linear-gradient(to bottom, #0c251e, transparent 20%, transparent 80%, #0c251e),
-                    linear-gradient(to right, #0c251e, transparent 20%, transparent 80%, #0c251e),
-                    url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
+        background: url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
         position: absolute;
         top: 20%;
         left: 0;
