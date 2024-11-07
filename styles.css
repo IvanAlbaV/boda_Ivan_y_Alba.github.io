@@ -1,376 +1,308 @@
-html {
-    scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0c251e;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
 }
 
 body {
-    font-family: 'Tangerine';
-    color: #0c251e;
-    margin: 0;
-    padding: 0;
-    width: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 100% de la altura de la ventana */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#frontPage {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    color: white; /* Ajusta el color según tu diseño */
+    z-index: 2;
+    background: url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
+}
+
+#front{
+    display: flex;
+}
+
+#frontPage section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #DAE1D8;
-    overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
 }
 
-a {
+a{
+    background-color: transparent;
+    margin-bottom: 20px;
+    align-self: center;
     text-decoration: none;
 }
 
 a:visited {
-    color: #0c251e; /* Mismo color que el enlace no visitado */
+    color: white; /* Mismo color que el enlace no visitado */
     text-decoration: none; /* Sin subrayado */
 }
 
-header {
-    width: 100%; /* Espaciado interior */
-    height: 80px;
-    position: fixed; /* Cambiar de fixed a absolute */
-    top: 0;
-    left: 0;
+
+.nameFrontPageBig {
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+
+.nameFrontPageLit {
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#contentLink section {
     display: flex;
+    place-items: center;
     align-items: center;
-    justify-content: space-between;
-    transition: 0.6s;
-    padding: 0 100px;
-    margin: 0;
-    z-index: 100000;
-    background-color: #DAE1D8;
-    -webkit-box-shadow: 0 2px 5px #0c251e;
-    -moz-box-shadow: 0 2px 5px #0c251e;
-    box-shadow: 0 2px 5px #0c251e;
-    border-radius: 0.5px;
-}
-
-header.active{
-    background:#0c251e;
-    transition: 0.2s;
-}
-
-header.active .logo{
-    color: #DAE1D8;
-}
-
-header.active .hamburger .line{
-    background: #DAE1D8;
-}
-
-.containerLogo{
-    width: 20%;
-    height: 100%;
-    position: relative;
-    /*border: red solid 1px;*/
-    display: flex;
-    justify-content: center;
-}
-
-
-.logoExt{
-    position: absolute; /* Establece la posición absoluta */
-    top: 0; /* Alinea el logo externo en la parte superior */
-    left: 0; /* Alinea el logo externo en la parte izquierda */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 100%; /* Ocupa la mitad de la altura del contenedor */
-    background-image: url(images/4-removebg-preview.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 20px;
-    /* Establece el origen de la transformación en el centro del logo */
-    transform-origin: center;
-}
-
-.logoInt{
-    position: absolute; /* Establece la posición absoluta */
-    top: 0; /* Alinea el logo interno en la parte inferior */
-    left: 0; /* Alinea el logo interno en la parte izquierda */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 100%; /* Ocupa la mitad de la altura del contenedor */
-    background-image: url(images/6.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 20px;
-}
-
-.hamburger{
-    display: none;
-}
-
-.navigator{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    align-items: center;
-}
-
-.navigator.active{
-    height: 200px;
-    width: 100%;
-}
-
-.navigator ul{
-    display: flex;
-    justify-content: end;
-}
-
-.navigator.active ul {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.navigator ul li {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-}
-
-.navigator.active ul li{
-    width: 100%;
-    margin: 0;
-}
-
-.navigator ul li a{
-    display: block;
-    color: #0c251e;
-    font-size: 25px;
-    padding: 0 0;
-    transition: 1.2s;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-.sticky .navigator ul li a {
-    color: #DAE1D8;
-}
-
-.sticky{
-    background: #0c251e;
-}
-
-.sticky * {
-    color: #DAE1D8;
-    text-decoration: none;
-}
-
-.sticky .containerLogo .logoInt{
-    background-image: url(images/5.png);
-}
-
-.active .containerLogo .logoInt{
-    background-image: url(images/5.png);
-}
-
-.container{
-    position: absolute;
-    top: 90px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#image1 {
-    background-image: url(images/8.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 100vh;
+    background-color: transparent;
     width: 85%;
-    height: 480px;
-    display: flex;
-    justify-content: center;
 }
 
-.containerCountdown{
+#frontPage section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background-color: transparent;
+    width: 100%;
+}
+
+#contentLink {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 100vh; /* Para que el contenido no quede oculto detrás del header */
+    color: white;
+    width: 100%;
     align-items: center;
-    width: 100%;
-}
-.containerHistory{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-}
-.containerHistory hr{
-    width: 100%;
-}
-#title {
-    text-align: center;
-    font-size: 4rem; /* Tamaño grande del título */
-    margin: 20px 0; /* Añade un poco de espacio arriba y abajo */
-}
-#countdown {
-    text-align: center;
-    font-size: 2rem; /* Tamaño grande del contador */
-    display: flex;
-    justify-content: center;
-    text-decoration: wavy;
-}
-#history {
-    text-align: center;
-    font-size: 2.5rem; /* Tamaño grande del contador */
-    display: flex;
-    justify-content: center;
-}
-#diaB {
-    text-align: center;
-    font-size: 4rem; /* Tamaño grande del título */
-    margin: 20px 0; /* Añade un poco de espacio arriba y abajo */
-}
-.countdown-item {
-    margin: 10px; /* Ajusta el espacio entre los elementos */
-    padding-right: 10px;
-    text-align: center;
-}
-hr {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin-top: 25px;
-    padding-top: 20px;
-    border: none;
-    border-top: 0.75px solid #DAE1D8;
+    padding-top: 20%;
 }
 
 .hidden {
     opacity: 0;
-    transition: all 2s;
+    filter: blur(5px);
+    transition: all 1s;
 }
 
-.show {
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.left {
+    transform: translateX(-100%);
+}
+
+.show{
     opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
-@media (max-width: 600px) {
-    a {
+#frontPageArrow {
+    position: absolute;
+    bottom: 20px; /* Distancia desde el fondo de la pantalla */
+    left: 50%;
+    background-color: transparent;
+}
+
+.arrowButton {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 50px;
+    z-index: 100;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dateFront{
+    display: grid;
+    grid-template-columns: auto auto auto; /* Tres columnas */
+    align-items: center; /* Centra verticalmente los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    background-color: transparent;
+}
+
+/* Agregar barras verticales de separación */
+.dateFront a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px; /* Ancho de la barra */
+    background-color: white; /* Color de la barra */
+    transform: translateX(50%);
+}
+
+/* Ajuste para que las barras no se sobrepongan */
+.dateFront a:not(:last-child) {
+    position: relative;
+    padding-right: 20px; /* Espacio para la barra */
+}
+
+.verticalLine {
+    display: flex;
+    justify-content: start;
+    height: 190px;
+    border-right: 2px solid white;
+}
+
+.borderSection{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titleContent {
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+
+.dateContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.invitation{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.us{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 2% 3%;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    font-size: 1em;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.invitationName{
+    font-size: 1.5em;
+    font-style: normal;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin-bottom: 2%;
+}
+
+.invitationText{
+    font-size: 1em;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 10%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .nameFrontPageBig {
+        font-size: 1rem;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+
+    .nameFrontPageLit {
+        font-size: 1rem;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    #frontPage {
+        background: url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        color: white; /* Ajusta el color según tu diseño */
+        z-index: 2;
+        height: 70vh;
+        align-items: flex-start;
+    }
+
+    #frontPageArrow {
+        position: absolute;
+        bottom: 0; /* Distancia desde el fondo de la pantalla */
+        left: 45%;
+        margin-bottom: 35%;
+        cursor: pointer;
+    }
+
+    .arrowButton {
+        display: flex;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
         text-decoration: none;
+        font-size: 35px;
+        z-index: 1000;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        position: absolute;
     }
     
-    a:visited {
-        color: #0c251e; /* Mismo color que el enlace no visitado */
-        text-decoration: none; /* Sin subrayado */
+    .front{
+        margin-top: 25%;
+        padding-left: 5%;
     }
 
-    #title {
-        font-size: 3rem; /* Reduce el tamaño del título en dispositivos móviles */
-    }
-    #countdown {
-        font-size: 1.8rem; /* Reduce el tamaño del contador en dispositivos móviles */
-    }
-    #history {
-        font-size: 2rem; /* Reduce el tamaño del contador en dispositivos móviles */
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    #diaB {
-        font-size: 3rem; /* Reduce el tamaño del título en dispositivos móviles */
-    }
-
-    .container{
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        box-shadow: 0px 8px 5px #0c251e;
-        border-radius: 0.5px;
-    }
-
-    .containerCountdown{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .containerHistory{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 90%;
-    }
-
-    .sticky * {
-        font-size: 1.5rem;
-    }
-
-    
-    .sticky .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background: #DAE1D8;
-        margin: 6px  0;
+    .dateFront a{
+        text-align: center;
     }
 
     header {
-        padding: 0 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin: 0 20px;
-    }
-    .logo {
-        margin: 0 20px;
-    }
-
-    .sticky .logo{
-        font-size: 40px;
-    }
-
-    .hamburger .line {
-        width: 30px;
-        height: 3px;
-        background: #0c251e;
-        margin: 6px  0;
-    }
-
-    .navigator{
-        height: 0;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background: #0c251e;
-        transform: 0.2s;
-        overflow: hidden;
         display: flex;
-        justify-content: center;
-    }
-
-    .navigator ul{
-        display: block;
-        width: fit-content;
-        align-items: center;
-        margin-top: 30px;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
-        padding: 0;
-    }
-
-    .navigator ul li a {
-        margin-bottom: 30px;
-        color: #DAE1D8;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        font-size: 2rem;
+        height: 100vh; /* 100% de la altura de la ventana */
+        z-index: 1;
     }
 
-    .navigator.active ul li{
-        width: 100%;
-    }
-
-    .navigator.active ul {
-        opacity: 1;  
+    .titleContent {
+        font-size: 1rem;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-weight: 900;
     }
 }
