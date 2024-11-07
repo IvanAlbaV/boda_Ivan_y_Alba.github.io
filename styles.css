@@ -182,10 +182,17 @@ a:visited {
 }
 
 .titleContent {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-style: normal;
     letter-spacing: 6px;
     font-weight: 900;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: #0c251e;
 }
 
 .dateContent{
@@ -303,6 +310,6 @@ a:visited {
         font-size: 1rem;
         font-style: normal;
         letter-spacing: 5px;
-        font-weight: 900;
+        font-weight: 1000;
     }
 }
