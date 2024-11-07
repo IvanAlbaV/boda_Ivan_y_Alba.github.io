@@ -28,7 +28,7 @@ header {
     height: 80vh;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
-    background: url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
+    background: url('./images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
 }
 
 #front{
@@ -247,7 +247,7 @@ a:visited {
     }
 
     #frontPage {
-        background: url('../images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
+        background: url('./images/imageHeader\ retoques\ esteticos.png') no-repeat center center/cover;
         position: absolute;
         top: 20%;
         left: 0;
