@@ -53,6 +53,19 @@ a:visited {
     text-decoration: none; /* Sin subrayado */
 }
 
+.titleFrontPageBig {
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 6px;
+    font-weight: 900;
+}
+
+.titleFrontPageLit {
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
 
 .nameFrontPageBig {
     font-size: 1.5rem;
@@ -294,6 +307,20 @@ a:visited {
 
     .nameFrontPageLit {
         font-size: 0.9rem;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .titleFrontPageBig {
+        font-size: 1rem;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+
+    .titleFrontPageLit {
+        font-size: 1rem;
         font-style: normal;
         letter-spacing: 1px;
         font-weight: 400;
