@@ -227,6 +227,7 @@ a:visited {
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
     text-align: center;
+    border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
 .titleContent {
@@ -299,6 +300,7 @@ a:visited {
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
     text-align: center;
+    border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
 .borderSectionImage{
