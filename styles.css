@@ -215,7 +215,7 @@ a:visited {
 .verticalLineShort {
     display: flex;
     justify-content: start;
-    height: 140px;
+    height: 100px;
     border-right: 2px solid white;
 }
 
