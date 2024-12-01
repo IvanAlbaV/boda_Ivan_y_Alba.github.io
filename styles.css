@@ -99,11 +99,18 @@ a:visited {
     font-weight: 400;
 }
 
-#contentLink section {
+#contentLink .borderSection {
     display: flex;
     place-items: center;
     align-items: center;
-    min-height: 100vh;
+    background-color: transparent;
+    width: 85%;
+}
+
+#contentLink .borderSectionContent {
+    display: flex;
+    place-items: center;
+    align-items: center;
     background-color: transparent;
     width: 85%;
 }
@@ -269,6 +276,40 @@ a:visited {
     height: 300px;    /* Ajusta la altura del mapa */
     border-radius: 10px; /* Opcional: bordes redondeados */
 }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width: 60%;
+}
+
+.borderSectionContent{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    text-align: center;
+}
+
+.borderSectionImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+.contentImage{
+    display: block;
+    max-width: 100%; /* La imagen será adaptable */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    border: 2px solid white;
+  }
 
 .invitation{
     display: flex;
