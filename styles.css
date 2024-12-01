@@ -209,8 +209,10 @@ a:visited {
     border: 2px solid white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding-bottom: 20%;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    text-align: center;
 }
 
 .titleContent {
@@ -258,6 +260,14 @@ a:visited {
     font-weight: 1;
     margin-top: 10%;
     text-align: center;
+}
+
+.map{
+    margin-top: 10%; /* Espaciado opcional entre el contenido y el mapa */
+    width: 100%;      /* Hace que el mapa sea adaptable */
+    max-width: 600px; /* Establece un ancho máximo */
+    height: 300px;    /* Ajusta la altura del mapa */
+    border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
 .invitation{
