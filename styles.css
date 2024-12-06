@@ -247,8 +247,9 @@ a:visited {
 .dateContent{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 20%;
-    width: 50%;
+    width: 100%;
 }
 
 .scheduleContent{
