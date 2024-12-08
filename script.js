@@ -42,3 +42,10 @@ function scrollToSection(id) {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+// Selecciona la tarjeta
+const card = document.querySelector('.card');
+
+// Agrega un evento de clic
+card.addEventListener('click', () => {
+  card.classList.toggle('flipped'); // Alterna la clase 'flipped'
+});
