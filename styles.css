@@ -337,8 +337,9 @@ a:visited {
 
 .contentImage{
     display: block;
+    width: 100%;
     max-width: 100%; /* La imagen será adaptable */
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: 100%; /* Mantiene la proporción de la imagen */
     border-radius: 10px; /* Opcional: bordes redondeados */
     border: 2px solid white;
   }
@@ -415,7 +416,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    border-radius: 10px; /* Opcional: bordes redondeados */
+    border-radius: 8px; 
     border: 2px solid white;
 }
 
