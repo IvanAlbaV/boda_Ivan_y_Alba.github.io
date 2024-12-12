@@ -291,6 +291,21 @@ a:visited {
     padding-top: 8px;
 }
 
+.buttonRsvp{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    width: 35%;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 10%;
+    margin-bottom: 0;
+    color: white;
+}
+
 .descriptionContent{
     font-size: 1em;
     font-style: italic;
