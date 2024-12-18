@@ -496,7 +496,7 @@ a:visited {
         left: 0;
         color: white; /* Ajusta el color según tu diseño */
         z-index: 2;
-        height: 48vh;
+        height: 46vh;
         align-items: flex-start;
         top: 0;
     }
@@ -506,8 +506,8 @@ a:visited {
         left: 0;
         color: white; /* Ajusta el color según tu diseño */
         z-index: 2;
-        height: 48vh;
-        top: 48%;
+        height: 46vh;
+        top: 46%;
     }
 
     #frontPageArrow {
