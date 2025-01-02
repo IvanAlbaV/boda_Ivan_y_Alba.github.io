@@ -52,3 +52,13 @@ cards.forEach(card => {
     card.classList.toggle('flipped'); // Alterna la clase 'flipped' solo en la tarjeta clicada
   });
 });
+
+// Selecciona todas las tarjetas
+const cardsFacts = document.querySelectorAll('.cardFacts');
+
+// Agrega un evento de clic a cada tarjeta
+cardsFacts.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped'); // Alterna la clase 'flipped' solo en la tarjeta clicada
+  });
+});
