@@ -36,26 +36,72 @@ header {
     flex-direction: column;
 }
 
-#alba{
-    display: block;
-    width: 50%;
-    max-width: 70%;
-    height: 100%;
-    color: white; /* Ajusta el color según tu diseño */
-    z-index: 2;
-    padding-top: 10%;
-    padding-bottom: 5%;
+.ivan{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 20vh;
+    height: auto;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
 
-#ivan{
-    display: block;
-    width: 50%;
-    max-width: 70%;
-    height: 100%;
-    color: white; /* Ajusta el color según tu diseño */
-    z-index: 2;
-    padding-top: 5%;
-    padding-bottom: 20%;
+.ivanFront, .ivanBack{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+
+.ivanFront{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transform: rotateY(0deg);
+}
+
+.ivanBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transform: rotateY(180deg);
+}
+
+.alba{
+    position: relative;
+    margin-bottom: 15%;
+    margin-left: 110%;
+    width: 20vh;
+    height: auto;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.albaFront, .albaBack{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+
+.albaFront{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transform: rotateY(0deg);
+}
+
+.albaBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transform: rotateY(180deg);
 }
 
 #front{
@@ -148,6 +194,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     color: white;
+    margin-top: 100vh; /* Para que el contenido no quede oculto detrás del header */
     width: 100%;
     align-items: center;
 }
@@ -251,7 +298,10 @@ a:visited {
     height: 20px;
     border-right: 2px solid white;
 }
+
 .ringsContent{
+    position: absolute;
+    top: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -377,13 +427,14 @@ a:visited {
     border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
-.borderSectionContentFront{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
-    text-align: center;
-    border-radius: 10px; /* Opcional: bordes redondeados */
+.borderSectionContentFrontAlba{
+    position: absolute;
+    top: 54vh;
+    perspective: 1000px;
+}
+
+.borderSectionContentFrontIvan{
+    perspective: 1000px;
 }
 
 .borderSectionImage{
@@ -460,7 +511,6 @@ a:visited {
     transition: transform 0.6s;
 }
 
-
 .frontCard, .backCard{
     position: absolute;
     width: 100%;
@@ -496,6 +546,14 @@ a:visited {
 
 .cardFacts.flipped {
     transform: rotateY(180deg); /* Gira la tarjeta al hacer clic */
+}
+
+.alba.flipped{
+    transform: rotateY(180deg);
+}
+
+.ivan.flipped{
+    transform: rotateY(180deg);
 }
 
 @media (max-width: 768px) {

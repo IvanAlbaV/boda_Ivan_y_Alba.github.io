@@ -62,3 +62,23 @@ cardsFacts.forEach(card => {
     card.classList.toggle('flipped'); // Alterna la clase 'flipped' solo en la tarjeta clicada
   });
 });
+
+// Selecciona todas las tarjetas
+const albaFacts = document.querySelectorAll('.alba');
+
+// Agrega un evento de clic a cada tarjeta
+albaFacts.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped'); // Alterna la clase 'flipped' solo en la tarjeta clicada
+  });
+});
+
+// Selecciona todas las tarjetas
+const ivanFacts = document.querySelectorAll('.ivan');
+
+// Agrega un evento de clic a cada tarjeta
+ivanFacts.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped'); // Alterna la clase 'flipped' solo en la tarjeta clicada
+  });
+});
