@@ -38,7 +38,8 @@ header {
 
 #alba{
     display: flex;
-    width: 100%;
+    height: 43vh;
+    width: 31vh;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
     background: url('./images/alba.jpeg') no-repeat center center/cover;
@@ -46,7 +47,8 @@ header {
 
 #ivan{
     display: flex;
-    width: 100%;
+    height: 43vh;
+    width: 31vh;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
     background: url('./images/ivan.jpeg') no-repeat center center/cover;
@@ -54,12 +56,6 @@ header {
 
 #front{
     display: flex;
-}
-
-#alba section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 a{
@@ -520,20 +516,23 @@ a:visited {
     #alba {
         position: absolute;
         left: 0;
+        right: 0;
+        margin: auto;
         color: white; /* Ajusta el color según tu diseño */
         z-index: 2;
-        height: 46vh;
-        align-items: flex-start;
-        top: 0;
+        align-items: center;
+        top: 3%;
     }
 
     #ivan {
         position: absolute;
         left: 0;
+        right: 0;
+        margin: auto;
         color: white; /* Ajusta el color según tu diseño */
         z-index: 2;
-        height: 46vh;
-        top: 46%;
+        align-items: center;
+        top: 50%;
     }
 
     #frontPageArrow {
