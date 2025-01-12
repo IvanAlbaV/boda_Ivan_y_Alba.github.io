@@ -37,21 +37,25 @@ header {
 }
 
 #alba{
-    display: flex;
-    height: 43vh;
-    width: 31vh;
+    display: block;
+    width: 60%;
+    max-width: 70%;
+    height: 100%;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
-    background: url('./images/alba.jpeg') no-repeat center center/cover;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 #ivan{
-    display: flex;
-    height: 43vh;
-    width: 31vh;
+    display: block;
+    width: 60%;
+    max-width: 70%;
+    height: 100%;
     color: white; /* Ajusta el color según tu diseño */
     z-index: 2;
-    background: url('./images/ivan.jpeg') no-repeat center center/cover;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 #front{
@@ -140,22 +144,12 @@ a:visited {
     width: 85%;
 }
 
-#alba section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    background-color: transparent;
-    width: 100%;
-}
-
 #contentLink {
     display: flex;
     flex-direction: column;
-    margin-top: 100vh; /* Para que el contenido no quede oculto detrás del header */
     color: white;
     width: 100%;
     align-items: center;
-    padding-top: 20%;
 }
 
 .hidden {
@@ -242,6 +236,32 @@ a:visited {
     justify-content: start;
     height: 100px;
     border-right: 2px solid white;
+}
+
+.verticalLineShortShort {
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    border-right: 2px solid white;
+}
+
+.verticalLineShortShortShort {
+    display: flex;
+    justify-content: start;
+    height: 20px;
+    border-right: 2px solid white;
+}
+.ringsContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rings{
+    width: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .borderSection{
@@ -357,6 +377,15 @@ a:visited {
     border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
+.borderSectionContentFront{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    text-align: center;
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
 .borderSectionImage{
     display: flex;
     flex-direction: column;
@@ -429,7 +458,6 @@ a:visited {
     height: 25vh;
     transform-style: preserve-3d;
     transition: transform 0.6s;
-    border: 1px solid white;
 }
 
 
@@ -445,6 +473,8 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    border: 2px solid white;
     transform: rotateY(0deg);
 }
 
@@ -511,28 +541,6 @@ a:visited {
         font-style: normal;
         letter-spacing: 5px;
         font-weight: 900;
-    }
-
-    #alba {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        color: white; /* Ajusta el color según tu diseño */
-        z-index: 2;
-        align-items: center;
-        top: 3%;
-    }
-
-    #ivan {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        color: white; /* Ajusta el color según tu diseño */
-        z-index: 2;
-        align-items: center;
-        top: 50%;
     }
 
     #frontPageArrow {
