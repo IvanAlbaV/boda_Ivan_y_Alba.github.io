@@ -305,7 +305,7 @@ a:visited {
 
 .ringsContent{
     position: absolute;
-    top: 40vh;
+    top: 41vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
