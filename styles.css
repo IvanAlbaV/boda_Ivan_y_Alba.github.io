@@ -163,6 +163,17 @@ a:visited {
     font-weight: 900;
 }
 
+.eventContentMisc{
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 6px;
+    font-weight: 900;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+
+
 .hourContent{
     font-size: 1.3rem;
     font-style: normal;
@@ -411,9 +422,9 @@ a:visited {
 .borderSectionContentFacts{
     border: 2px solid white;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    grid-template-columns: 1fr; /* 2 columnas */
     gap: 30px; /* Espacio entre celdas */
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px; /* Opcional: bordes redondeados */
@@ -510,15 +521,15 @@ a:visited {
 
 .card{
     position: relative;
-    width:30vh;
+    width: 29vh;
     height: 50vh;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
 
 .cardFacts{
-    width: 15vh;
-    height: 25vh;
+    width: 35vh;
+    height: 22vh;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
@@ -613,6 +624,13 @@ a:visited {
         font-weight: 900;
     }
 
+    .eventContentMisc{
+        font-size: 2rem;
+        font-style: normal;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+
     #frontPageArrow {
         position: absolute;
         bottom: 0; /* Distancia desde el fondo de la pantalla */
@@ -663,12 +681,12 @@ a:visited {
     }
 
     .facts{
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-style: normal;
         letter-spacing: 1px;
         font-weight: 400;
         margin-bottom: 0px;
         text-align: center;
-        padding: 3px;
+        padding: 5%;
     }
 }
