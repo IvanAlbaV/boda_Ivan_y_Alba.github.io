@@ -219,7 +219,7 @@
     </div>
     </body>
     <script>
-        if (window.innerWidth < 500) {
+        if (window.innerWidth < 550) {
           document.getElementById('mobile-content').style.display = 'block';
         } else {
           document.getElementById('desktop-message').style.display = 'block';
@@ -227,7 +227,7 @@
     
         // Opcional: escucha cambios de tamaño en la ventana
         window.addEventListener('resize', function () {
-          if (window.innerWidth < 500) {
+          if (window.innerWidth < 550) {
             document.getElementById('mobile-content').style.display = 'block';
             document.getElementById('desktop-message').style.display = 'none';
           } else {
