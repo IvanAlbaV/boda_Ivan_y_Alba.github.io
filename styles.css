@@ -552,7 +552,7 @@ a:visited {
 }
 
 .backCard{
-    background-color: white;
+    background-color:#daf3ec;
     color: #0c251e;
     display: flex;
     flex-direction: column;
@@ -578,6 +578,7 @@ a:visited {
 .ivan.flipped{
     transform: rotateY(180deg);
 }
+
 
 @media (max-width: 768px) {
 
@@ -681,7 +682,7 @@ a:visited {
     }
 
     .facts{
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-style: normal;
         letter-spacing: 1px;
         font-weight: 400;
