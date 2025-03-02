@@ -160,14 +160,14 @@ a:visited {
 
 .eventContent{
     font-size: 1.5rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 6px;
     font-weight: 900;
 }
 
 .eventContentMisc{
     font-size: 1.5rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 6px;
     font-weight: 900;
     margin-top: 20%;
@@ -649,15 +649,14 @@ a:visited {
 
     .eventContent{
         font-size: 1.7rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 5px;
         font-weight: 900;
-
     }
 
     .eventContentMisc{
         font-size: 2rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 5px;
         font-weight: 900;
         text-align: center;
