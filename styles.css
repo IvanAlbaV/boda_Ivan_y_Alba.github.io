@@ -128,21 +128,21 @@ a:visited {
 
 .titleFrontPageBig {
     font-size: 1.5rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 6px;
     font-weight: 900;
 }
 
 .titleFrontPageLit {
     font-size: 1.3rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
 .nameFrontPageBig {
     font-size: 1.5rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 6px;
     font-weight: 900;
     height: 90%;
@@ -151,7 +151,7 @@ a:visited {
 .nameFrontPageLit {
     display: flex;
     font-size: 1.3rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 1px;
     font-weight: 400;
     align-items: center;
@@ -335,7 +335,7 @@ a:visited {
 
 .titleContent {
     font-size: 2.0rem;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 6px;
     font-weight: 900;
     width: 100%;
@@ -374,7 +374,7 @@ a:visited {
 
 .buttonRsvp{
     font-size: 1rem;
-    font-style: normal;
+    font-style: italic;
     font-weight: 900;
     width: 35%;
     text-align: center;
@@ -493,7 +493,7 @@ a:visited {
 
 .invitationName{
     font-size: 1.5em;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: 3px;
     font-weight: 900;
     margin-bottom: 2%;
@@ -591,28 +591,28 @@ a:visited {
 
     .nameFrontPageBig {
         font-size: 2rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 5px;
         font-weight: 900;
     }
 
     .nameFrontPageLit {
         font-size: 0.9rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 1px;
         font-weight: 400;
     }
 
     .titleFrontPageBig {
         font-size: 1rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 5px;
         font-weight: 900;
     }
 
     .titleFrontPageLit {
         font-size: 1rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 1px;
         font-weight: 400;
     }
@@ -640,7 +640,7 @@ a:visited {
 
     .hours{
         font-size: 0.8rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 1px;
         font-weight: 400;
         margin-bottom: 0px;
@@ -706,7 +706,7 @@ a:visited {
 
     .titleContent {
         font-size: 1.5rem;
-        font-style: normal;
+        font-style: italic;
         letter-spacing: 5px;
         font-weight: 1000;
     }
