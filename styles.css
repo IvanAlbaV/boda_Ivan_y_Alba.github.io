@@ -174,15 +174,6 @@ a:visited {
     margin-bottom: 5%;
 }
 
-
-
-.hourContent{
-    font-size: 1.3rem;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
 .italicContent{
     font-size: 0.8em;
     font-style: italic;
@@ -633,6 +624,19 @@ a:visited {
         letter-spacing: 1px;
         font-weight: 400;
         margin-bottom: 0px;
+    }
+
+    .factsText{
+        font-size: 0.8rem;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .hours{
