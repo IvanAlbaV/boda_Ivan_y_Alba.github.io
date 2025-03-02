@@ -523,7 +523,7 @@ a:visited {
 
 .cardFacts{
     width: 35vh;
-    height: 30vh;
+    height: 35vh;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
