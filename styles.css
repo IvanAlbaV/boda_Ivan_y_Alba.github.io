@@ -638,6 +638,19 @@ a:visited {
         padding-right: 10%;
     }
 
+    .endText{
+        font-size: 1.2rem;
+        font-style: italic;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .hours{
         font-size: 0.8rem;
         font-style: italic;
